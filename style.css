@@ -2,12 +2,14 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: #ccc;
-    ;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
 }
 
 main {
     margin: 50px auto;
-    width: 960px;
+    width: 750px;
+    height: 900px;
     display: grid;
     grid-template-columns: 360px 1fr;
     grid-template-rows: 360px auto;
@@ -21,21 +23,45 @@ main {
     padding: 20px;
 }
 
-#dados-pessoais {
-    font-size: 20px;
+#cabecalho {
+    padding: 10px 10px;
+    font-size: 15px;
+    height: 445px;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(163, 163, 201);
+    background-color: rgba(170, 170, 212, 0.808);
     grid-area: dados-pessoais;
 }
 
 #habilidades {
-    background-color: rgb(192, 146, 146);
-    font-family: 'Courier New', Courier, monospace;
-    color: chartreuse;
-    font-size: 20px;
+    padding: 5px 10px;
+    background-color: rgba(192, 146, 146, 0.657);
+    margin-top: 103px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
     grid-area: habilidades;
 }
+
+#tabela {
+    background-color: rgba(211, 211, 211, 0.555);
+    color: black;
+    font-weight: 100;
+    padding: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+/* @font-face {
+    font-family: Scope One;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway+Dots&display=swap');
+} */
 
 #experiencias {
     background-color: rgb(248, 247, 248);
@@ -54,6 +80,29 @@ main {
         grid-template-columns: 1fr;
         grid-template-areas: "dados-pessoais" "habilidades" "experiencias";
     }
+}
+
+p {
+    height: 10px;
+}
+
+#habilidade-espaco {
+    padding-top: 48px;
+}
+
+#cursos {
+    padding-top: 144px;
+}
+
+#nome {
+    font-weight: 500;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+#endereco {
+    text-align: center;
 }
 
 
