@@ -8,8 +8,8 @@ body {
 
 main {
     margin: 50px auto;
-    width: 750px;
-    height: 900px;
+    width: 850px;
+    height: 1000px;
     display: grid;
     grid-template-columns: 360px 1fr;
     grid-template-rows: 360px auto;
@@ -25,7 +25,7 @@ main {
 
 #cabecalho {
     padding: 10px 10px;
-    font-size: 15px;
+    font-size: 16px;
     height: 445px;
     background-color: rgba(170, 170, 212, 0.808);
     grid-area: dados-pessoais;
@@ -63,6 +63,7 @@ a {
 } */
 
 #experiencias {
+    height: 1200;
     background-color: rgb(248, 247, 248);
     grid-area: experiencias;
 }
@@ -102,12 +103,16 @@ p {
     text-align: center;
 }
 
-#endereco {
+#endereco, #idade {
     text-align: center;
 }
 
 #ponto {
     list-style: circle;
+}
+#paragrafo{
+    list-style:circle;
+   font-size: 15px;
 }
 
 
