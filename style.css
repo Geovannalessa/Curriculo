@@ -3,13 +3,13 @@ body {
     padding: 0px;
     background-color: #ccc;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 main {
     margin: 50px auto;
-    width: 850px;
-    height: 1000px;
+    width: 750px;
+    height: 720px;
     display: grid;
     grid-template-columns: 360px 1fr;
     grid-template-rows: 360px auto;
@@ -25,8 +25,8 @@ main {
 
 #cabecalho {
     padding: 10px 10px;
-    font-size: 16px;
-    height: 445px;
+    font-size: 13px;
+    height: 345px;
     background-color: rgba(170, 170, 212, 0.808);
     grid-area: dados-pessoais;
 }
@@ -34,9 +34,8 @@ main {
 #habilidades {
     padding: 5px 10px;
     background-color: rgba(192, 146, 146, 0.657);
-    margin-top: 103px;
     color: rgb(0, 0, 0);
-    font-size: 15px;
+    font-size: 13px;
     grid-area: habilidades;
 }
 
@@ -86,20 +85,14 @@ p {
     height: 10px;
 }
 
-#habilidade-espaco {}
-
 #trabalhos-voluntarios {
     padding-top: 0px;
-}
-
-#cursos {
-    padding-top: px;
 }
 
 #nome {
     font-weight: bold;
     color: black;
-    font-size: 18px;
+    font-size: 13px;
     text-align: center;
 }
 
@@ -112,7 +105,7 @@ p {
 }
 #paragrafo{
     list-style:circle;
-   font-size: 15px;
+   font-size: 13px;
 }
 
 
