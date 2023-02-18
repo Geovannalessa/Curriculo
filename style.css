@@ -1,49 +1,59 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #ccc;
+    background-color: #eeeeee;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
 
 main {
     margin: 50px auto;
-    width: 750px;
-    height: 720px;
+    width: 790px;
     display: grid;
     grid-template-columns: 360px 1fr;
     grid-template-rows: 360px auto;
     grid-template-areas: "dados-pessoais experiencias" "habilidades experiencias";
-    box-shadow: black;
+    position: relative;
 }
-
-#dados-pessoais,
-#habilidades,
-#experiencias {
-    padding: 20px;
+main::before {
+    height: inherit;
+    position: absolute;
+    content: "";
+    inset: 0px;
+    z-index: -1;
+    background: linear-gradient(200.94deg, #b08bde8b 14.43%, #f0a1aca1 65.28%,#faf6eb 85.28%);
 }
-
 #cabecalho {
-    padding: 10px 10px;
+    padding: 30px 10px 0px 10px;
     font-size: 13px;
-    height: 345px;
-    background-color: rgba(170, 170, 212, 0.808);
+    background-color: rgba(49, 30, 30, 0.128);
     grid-area: dados-pessoais;
+}
+#nome {
+    font-weight: bold;
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
+
+#endereco,#idade {
+    text-align: center;
+    font-size: 14px;
 }
 
 #habilidades {
     padding: 5px 10px;
-    background-color: rgba(192, 146, 146, 0.657);
+    background-color: rgba(49, 30, 30, 0.128);
     color: rgb(0, 0, 0);
     font-size: 13px;
     grid-area: habilidades;
 }
 
-#tabela {
-    background-color: rgba(211, 211, 211, 0.555);
+.tabela {
     color: black;
     font-weight: bold;
     padding: 5px;
+    border: 1px solid rgba(2, 2, 2, 0.107);
 }
 
 li {
@@ -55,16 +65,31 @@ a {
     text-decoration: underline black;
 }
 
-
-/* @font-face {
-    font-family: Scope One;
-    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway+Dots&display=swap');
-} */
+#experiencias {
+    padding: 20px;
+}
 
 #experiencias {
     height: 1200;
-    background-color: rgb(248, 247, 248);
+    background-color: rgb(255, 255, 255);
     grid-area: experiencias;
+}
+
+p {
+    height: 10px;
+}
+
+#trabalhos-voluntarios {
+    padding-top: 0px;
+}
+
+.ponto {
+    list-style: circle;
+}
+
+.paragrafo {
+    list-style: circle;
+    font-size: 13px;
 }
 
 @media (max-width:960px) {
@@ -80,33 +105,3 @@ a {
         grid-template-areas: "dados-pessoais" "habilidades" "experiencias";
     }
 }
-
-p {
-    height: 10px;
-}
-
-#trabalhos-voluntarios {
-    padding-top: 0px;
-}
-
-#nome {
-    font-weight: bold;
-    color: black;
-    font-size: 13px;
-    text-align: center;
-}
-
-#endereco, #idade {
-    text-align: center;
-}
-
-#ponto {
-    list-style: circle;
-}
-#paragrafo{
-    list-style:circle;
-   font-size: 13px;
-}
-
-
-/* pesquisar grid templades areas e  */
