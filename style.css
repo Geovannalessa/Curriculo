@@ -3,14 +3,14 @@ body {
     padding: 0px;
     background-color: #eeeeee;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
-
 main {
     margin: 50px auto;
-    width: 790px;
+    width: 980px;
     display: grid;
-    grid-template-columns: 360px 1fr;
+    grid-template-columns: 410px 1fr;
     grid-template-rows: 360px auto;
     grid-template-areas: "dados-pessoais experiencias" "habilidades experiencias";
     position: relative;
@@ -29,40 +29,58 @@ main::before {
     background-color: rgba(49, 30, 30, 0.128);
     grid-area: dados-pessoais;
 }
-#nome {
+h1{
     font-weight: bold;
     color: black;
-    font-size: 17px;
+    font-size: 18px;
     text-align: center;
 }
-
-#endereco,#idade {
+#nome p{
     text-align: center;
     font-size: 14px;
 }
-
+#contato ul{
+    padding: 0%;
+}
+#contato ul li{
+    
+    font-size: 14px;
+    list-style: none;
+    color: #000000;
+    padding-bottom: 10px;
+}
+#imagens-contato{
+    width: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#imagens-contato a img{
+    height: 30px;
+    background-color: #fdfdfd23;
+    border-radius: 10px;
+    padding: 8px;
+}
 #habilidades {
-    padding: 5px 10px;
+    padding: 0px 10px;
     background-color: rgba(49, 30, 30, 0.128);
     color: rgb(0, 0, 0);
-    font-size: 13px;
+    font-size: 14px;
     grid-area: habilidades;
 }
-
-.tabela {
+h3{
     color: black;
     font-weight: bold;
     padding: 5px;
     border: 1px solid rgba(2, 2, 2, 0.107);
+    margin-top: 0%;
 }
-
 li {
-    list-style: none;
+    list-style: circle;
 }
-
 a {
     color: rgb(0, 0, 0);
-    text-decoration: underline black;
+    text-decoration: underline rgba(0, 0, 0, 0.162);
 }
 
 #experiencias {
