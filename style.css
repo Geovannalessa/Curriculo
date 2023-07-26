@@ -78,6 +78,9 @@ h3{
 li {
     list-style: circle;
 }
+.num>li{
+    list-style: decimal;
+}
 a {
     color: rgb(0, 0, 0);
     text-decoration: underline rgba(0, 0, 0, 0.162);
@@ -101,14 +104,6 @@ p {
     padding-top: 0px;
 }
 
-.ponto {
-    list-style: circle;
-}
-
-.paragrafo {
-    list-style: circle;
-    font-size: 13px;
-}
 
 @media (max-width:960px) {
     main {
