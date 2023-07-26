@@ -1,4 +1,5 @@
 # Curriculo
 Meu currículo em HTML e CSS.
 
-![curriculo-png](https://user-images.githubusercontent.com/91286117/222573164-d6641f25-5708-4415-bc5e-156bdb3755cd.png)
+
+![curriculo-2023](https://github.com/Geovannalessa/Curriculo/assets/91286117/5bb15195-05d8-49fe-a6fd-7297ff5bfc79)
