@@ -77,6 +77,8 @@ h3{
 li {
     list-style: circle;
 }
+
+
 .num>li{
     list-style: decimal;
 }
