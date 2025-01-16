@@ -23,6 +23,7 @@ main::before {
     z-index: -1;
     background: linear-gradient(200.94deg, #b08bde8b 14.43%, #f0a1aca1 65.28%,#faf6eb 85.28%);
 }
+
 #cabecalho {
     padding: 30px 10px 0px 10px;
     font-size: 13px;
